@@ -1,0 +1,170 @@
+name: Stein Planck
+race: symbiotic human
+ability_scores:
+  strength:
+    - base: 10
+      bonuses: 0
+      total: 10
+      modifier: 0
+  intelligence:
+    - base: 14
+      bonuses: 0
+      total: 14
+      modifier: 2
+  dexterity:
+    - base: 9
+      bonuses: 0
+      total: 9
+      modifier: -1
+  wisdom:
+    - base: 12
+      bonuses: 0
+      total: 12
+      modifier: 1
+  constitution:
+    - base: 10
+      bonuses: 0
+      total: 10
+      modifier: 0
+  charisma:
+    - base: 17
+      bonuses: 1
+      total: 18
+      modifier: 4
+  bonuses: # Bonuses are recorded changes that add to a particular ability score
+    - Improved mental stat (racial) +1 INT
+racial_attributes:
+  - title: Improved mental stat CHR
+    effect: +1 to CHR
+  - title: Damage reduction
+    effect: 2PDR or 2EDR reduction
+  - title: Fur
+    effect: The character's skin is covered in fur. Confers a -1 penalty to barter, bluff, diplomacy, gather information, and perform skill checks unless he is shaved or the furry areas are hidden. If shaved, the fur grows back within three days.
+  - title: Additional feat
+    effect: An additional feat is granted at first level
+background:
+  title: unity
+  weapon_proficiencies:
+    - simple weapons
+    - archaic weapons
+  special: unity pilgrims gain the harmless feat
+  class_skills:
+    - bluff
+    - diplomacy
+    - gather information
+    - knowledge (civics, occult, street, theology, philosphy)
+    - listen
+    - perform (acting, oratory)
+    - sense motive
+    - slight of hand
+class:
+  type: defensive
+  hit_die_increase: 1d8
+  tag_skills:
+    - barter
+    - handle animal
+    - diplomacy
+  skill_points:
+    first_level: 11
+    level_gain: 7
+occupation:
+  title: postal rider
+  prerequisite: Human or Symbiotic
+  available_class_skills:
+    - barter
+    - craft (structural)
+    - drive
+    - handle animal
+    - navigate
+    - ride
+    - spot
+    - survival
+  starting_wealth: 300
+traits:
+  - title: good natured
+    effect: +1 to CHR rolls and -1 to attack rolls
+  - title: extreme personality
+    effect: +1 to CHR rolls and double infamy points
+talents:
+  - title: coordinate
+    family: leadership
+    effect: Make a DC 10 CHR check. Ally within thirty feet gains a +1 tactical bonus on attack and skill check rolls. Effect lasts a number of rounds equal to the character's CHR modifier.
+feats:
+  - title: animal affinity
+    benefit: +2 bonus on handle animal and ride checks
+  - title: animal friend
+    prerequisites: CHR 13, animal affinity, handle animal (6)
+    benefit: Domestic animals are friendly and wild animals are indifferent. The character can befriend an animal with a handle animal skill check (DC 18 + animal hit die for domestic / DC 28 + animal hit die for wild). An animal companion can learn a trick at a +3 bonus to a handle animal skill check.
+  - title: harmless
+    prerequisites: CHR 17
+    benefit: +1 bonus to barter, bluff, diplomacy, gather information, sense motive, and slight of hand skill checks
+level: 1
+hit_points: 8
+defensive_class:
+  base: 0
+  bonus: 2
+  total: nil # I'm not sure what this value should be because I couldn't find the formula in the EXS
+  # Save sequence corresponds directly to index position
+  fortitude: 0
+  reflex: 0
+  will: 1
+  bonuses: # Same as the stat bonuses; listing of alterations
+    - effect: leather jacket
+      value: 1
+skills:
+  barter: 8
+  handle_animal: 6
+  diplomacy: 8
+  bluff: 0
+  gather_information: 2
+  knowledge_occult: 2
+  listen: 0
+  perform: 0
+  sense_motive: 0
+  slight_of_hand: 0
+carrying_capacity:
+  light: 33
+  medium: 34..66
+  heavy: 67..100
+  current: 12
+equipment:
+  weapons:
+    - title: slingshot
+      DMG: 1d2
+      CRIT: 19..20
+      RNG: 15
+      ROF: 1
+      SIZE: small
+      WT: 0
+      PROF: simple
+      SCRC: C
+      COST: 10
+  armor:
+    - title: leather jacket
+      defense: 1
+      PDR: 0
+      EDR: 0
+      LDR: 0
+      XDR: 0
+      DEX: 8
+      AP: 0
+      SPD: 30
+      WT: 4
+      SCRC: C
+      COST: 250
+  field_gear:
+    - title: sleeping bag
+      effect: keeps me warm at night ;)
+      WT: 4
+      SCRC: UN
+      COST: 15
+    - title: water skin
+      effect: keeps me hydrated
+      WT: 2
+      SCRC: C
+      COST: 10
+    - title: caltrops
+      effect: motherfucking caltrops
+      WT: 2
+      SCRC: C
+      COST: 5
