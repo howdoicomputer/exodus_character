@@ -2,35 +2,35 @@ name: Stein Planck
 race: symbiotic human
 ability_scores:
   strength:
-    - base: 10
-      bonuses: 0
-      total: 10
-      modifier: 0
-  intelligence:
     - base: 14
       bonuses: 0
-      total: 14
+      total: 10
       modifier: 2
+  intelligence:
+    - base: 20
+      bonuses: 0
+      total: 14
+      modifier: 5
   dexterity:
-    - base: 9
+    - base: 14
       bonuses: 0
       total: 9
-      modifier: -1
+      modifier: 2
   wisdom:
     - base: 12
       bonuses: 0
       total: 12
-      modifier: 1
+      modifier: 2
   constitution:
-    - base: 10
+    - base: 12
       bonuses: 0
       total: 10
-      modifier: 0
+      modifier: 1
   charisma:
-    - base: 17
+    - base: 21
       bonuses: 1
       total: 18
-      modifier: 4
+      modifier: 5
   bonuses: # Bonuses are recorded changes that add to a particular ability score
     - Improved mental stat (racial) +1 INT
 racial_attributes:
@@ -65,8 +65,8 @@ class:
     - handle animal
     - diplomacy
   skill_points:
-    first_level: 11
-    level_gain: 7
+    first_level: 36
+    level_gain: 9
 occupation:
   title: postal rider
   prerequisite: Human or Symbiotic
@@ -112,12 +112,12 @@ defensive_class:
     - effect: leather jacket
       value: 1
 skills:
-  barter: 8
-  handle_animal: 6
-  diplomacy: 8
-  bluff: 0
-  gather_information: 2
-  knowledge_occult: 2
+  barter: 11
+  handle_animal: 11
+  diplomacy: 10
+  bluff: 5
+  gather_information: 7
+  knowledge_occult: 7
   listen: 0
   perform: 0
   sense_motive: 0
