@@ -112,12 +112,12 @@ defensive_class:
     - effect: leather jacket
       value: 1
 skills:
-  barter: 11
-  handle_animal: 11
-  diplomacy: 10
-  bluff: 5
-  gather_information: 7
-  knowledge_occult: 7
+  barter: 21
+  handle_animal: 21
+  diplomacy: 15
+  bluff: 15
+  gather_information: 12
+  knowledge_occult: 12
   listen: 0
   perform: 0
   sense_motive: 0
