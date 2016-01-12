@@ -115,15 +115,18 @@ feats:
 level: 1
 hit_points: 8
 defensive_class:
-  base: 0
-  bonus: 2
-  total: nil # I'm not sure what this value should be because I couldn't find the formula in the EXS
+  base: 3
+  bonus: 5
+  total: 24
   # Save sequence corresponds directly to index position
-  fortitude: 0
-  reflex: 0
-  will: 1
+  # 10+class+armor+shield(if applicable)+Dex+Misc
+  fortitude: 2
+  reflex: 2
+  will: 3
   bonuses: # Same as the stat bonuses; listing of alterations
     - effect: undercover vest
+      value: 3
+    - effect: DEX
       value: 3
 skills:
   barter: 21
