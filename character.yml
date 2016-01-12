@@ -109,8 +109,8 @@ defensive_class:
   reflex: 0
   will: 1
   bonuses: # Same as the stat bonuses; listing of alterations
-    - effect: leather jacket
-      value: 1
+    - effect: undercover vest
+      value: 3
 skills:
   barter: 21
   handle_animal: 21
@@ -123,41 +123,54 @@ skills:
   sense_motive: 0
   slight_of_hand: 0
 carrying_capacity:
-  light: 33
-  medium: 34..66
-  heavy: 67..100
-  current: 12
+  light: 58
+  medium: 59..116
+  heavy: 117..175
+  current: 4
 equipment:
+  wealth: 215
   weapons:
-    - title: slingshot
-      DMG: 1d2
+    - title: crossbow
+      DMG: 1d10
       CRIT: 19..20
-      RNG: 15
+      RNG: 40
       ROF: 1
-      SIZE: small
-      WT: 0
+      SIZE: large
+      WT: 6
       PROF: simple
-      SCRC: C
-      COST: 10
+      SCRC: UN
+      COST: 2500
+  ammo:
+    - title: crossbow bolt
+      DMG: 1d10
+      WT: 1 per 12
+      SCRC: I
+      COST: 1
+      AMT: 50
   armor:
-    - title: leather jacket
-      defense: 1
-      PDR: 0
-      EDR: 0
-      LDR: 0
+    - title: undercover vest
+      defense: 3
+      PDR: 2
+      EDR: 1
+      LDR: 1
       XDR: 0
-      DEX: 8
-      AP: 0
+      DEX: 5
+      AP: -2
       SPD: 30
-      WT: 4
-      SCRC: C
-      COST: 250
+      WT: 3
+      SCRC: I
+      COST: 1200
   field_gear:
     - title: sleeping bag
       effect: keeps me warm at night ;)
       WT: 4
       SCRC: UN
       COST: 15
+    - title: two person tent
+      effect: +2 Fortitude save on cold weather effects
+      WT: 4
+      SCRC: I
+      COST: 25
     - title: water skin
       effect: keeps me hydrated
       WT: 2
@@ -168,3 +181,14 @@ equipment:
       WT: 2
       SCRC: C
       COST: 5
+    - title: flashlight
+      effect: illuminates
+      WT: 2
+      SCRC: I
+      COST: 40
+    - title: medpak
+      effect: heals for 1d8
+      WT: N/A
+      SCRC: I
+      COST: 175
+      COUNT: 2
