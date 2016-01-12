@@ -1,4 +1,8 @@
 name: Stein Planck
+level: 6
+age: 21
+exp:
+  current: 17250
 race: symbiotic human
 ability_scores:
   strength:
@@ -27,12 +31,13 @@ ability_scores:
       total: 10
       modifier: 1
   charisma:
-    - base: 21
+    - base: 22
       bonuses: 1
       total: 18
-      modifier: 5
+      modifier: 6
   bonuses: # Bonuses are recorded changes that add to a particular ability score
     - Improved mental stat (racial) +1 INT
+    - Stat bonus increase for level 4 +1 CHR
 racial_attributes:
   - title: Improved mental stat CHR
     effect: +1 to CHR
