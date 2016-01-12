@@ -89,6 +89,9 @@ talents:
   - title: coordinate
     family: leadership
     effect: Make a DC 10 CHR check. Ally within thirty feet gains a +1 tactical bonus on attack and skill check rolls. Effect lasts a number of rounds equal to the character's CHR modifier.
+  - title: inspiration
+    family: leadership
+    effect: After a full round of coodrinate, make a DC 10 CHR check to add +2 morale bonus on saving throws, attack throws, and damage rolls.
 feats:
   - title: animal affinity
     benefit: +2 bonus on handle animal and ride checks
@@ -98,6 +101,12 @@ feats:
   - title: harmless
     prerequisites: CHR 17
     benefit: +1 bonus to barter, bluff, diplomacy, gather information, sense motive, and slight of hand skill checks
+  - title: presence
+    benefit: +2 to diplomacy and intimidate checks
+  - title: magnetic personality
+    prerequisites: presence, level 6
+    reference_page: 118 EXS
+    benefit: I get a companion.
 level: 1
 hit_points: 8
 defensive_class:
